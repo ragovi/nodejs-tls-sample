@@ -4,7 +4,7 @@ const fs = require('fs'),
 
 
 /*
-Pasos para generar un cert autofirmado
+Steps to generate self signed certificate
 1. Generate RSA key. In the Terminal enter
 openssl genrsa -out mockserver.key
 
@@ -30,7 +30,7 @@ openssl x509 -req -days 3650 -in mockserver.csr -signkey mockserver.key -out moc
 Signature ok
 subject=/C=UK/ST=Surrey/L=Guildford/O=Mock Server Ltd/OU=mockdept/CN=mockserver.com/emailAddress=admin@mockserver.com
 
-4 Añadir en fichero hosts:
+4 Add to hosts:
 127.0.0.1 mockserver.com
 */
 
